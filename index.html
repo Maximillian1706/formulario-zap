@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario zap</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
-
+    
     <form>
-        <input type="text" id="name" placeholder="Nome">
-        <input type="tel" id="phone" placeholder="Tel/Cel">
-        <input type="email" id="email" placeholder="Email">
-        <textarea id="address" placeholder="Texto" (cols="30") (rows="10")></textarea>
-        <button onclick="sendmsg()">Enviar</button>
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="tel" id="phone" placeholder="Enter Phone no">
+        <input type="email" id="email" placeholder="Enter Email">
+        <textarea id="address" placeholder="Address" cols="30" rows="10"></textarea>
+        <button onclick="sendmsg()">Submit</button>
     </form>
         
     <style>
@@ -53,15 +54,15 @@
         </style>
 
     <script language="javascript">
-    function sendmsg() {
-    var name = document.getElementById("Maximillian bachiega").value
-    var phone = document.getElementById("+55019996050779").value
-    var email = document.getElementById("maxwebsitevenom@gmail.com").value
-    var address = document.getElementById("Socorro").value;
-    var data = "name:-" + name + ", phone no:-" + phone + ", email id:-" + email + ", address:-" + address;
-    window.location.href="https://wa.me/+55019996050779/?+data";
+    function sendmsg(){
+        var name = document.getElementById("name").value
+        var phone = document.getElementById("phone").value
+        var email = document.getElementById("email").value
+        var address = document.getElementById("address").value;
+        var data = "Name:-" + name + ", Phone no:-" + phone + ", Email id:-" + email + ", Address:-" + address;
+        console.log(data);
+        window.open(`https://wa.me/+85999401655/?text=*User details:==>*${data}`, '_blank');
     }
     </script>
-
 </body>
 </html>
