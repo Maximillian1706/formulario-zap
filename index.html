@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario zap</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" id="name" placeholder="Nome">
+        <input type="tel" id="phone" placeholder="Tel/Cel">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="address" placeholder="Texto" (cols="30") (rows="10")></textarea>
+        <button onclick="sendmsg()">Enviar</button>
+    </form>
+        
+    <style>
+        form{
+        display: inline-grid;
+        padding-left: 35%;
+        padding-top: 17%;
+        }
+
+        input{
+        width: 100%;
+        padding: 15px 100px;
+        margin: 3px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+        button{
+        width: 100%;
+        padding: 15px 100px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #65b165;
+        color: white;
+        }
+
+        textarea{
+        width: 100%;
+        padding: 15px 100px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+        </style>
+
+    <script language="javascript">
+    function sendmsg() {
+    var name = document.getElementById("Maximillian bachiega").value
+    var phone = document.getElementById("+55019996050779").value
+    var email = document.getElementById("maxwebsitevenom@gmail.com").value
+    var address = document.getElementById("Socorro").value;
+    var data = "name:-" + name + ", phone no:-" + phone + ", email id:-" + email + ", address:-" + address;
+    window.location.href="https://wa.me/+55019996050779/?+data";
+    }
+    </script>
+
+</body>
+</html>
